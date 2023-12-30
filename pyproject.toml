@@ -2,7 +2,7 @@
 name = "dockerproject"
 version = "0.1.0"
 description = ""
-authors = ["Adam Sidorovich <sidorovichva@gmail.com>"]
+authors = ["AS <s@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
