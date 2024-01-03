@@ -11,3 +11,9 @@ jobs:
     steps:
     - name: Run a one-line script
       run: echo Master branch is updated!
+  print-date:
+    needs: [say-hello]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print date
+      run: date

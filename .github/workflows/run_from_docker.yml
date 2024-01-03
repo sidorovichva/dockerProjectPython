@@ -1,0 +1,11 @@
+name: RunFromDocker
+
+on: [push]
+
+jobs:
+  job1:
+    name: docker-hello-world
+    runs-on: ubuntu-latest
+    steps:
+    - name: Step one
+      uses: docker://hello-world:latest
