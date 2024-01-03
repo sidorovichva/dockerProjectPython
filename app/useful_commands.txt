@@ -1,0 +1,28 @@
+# clean up some space
+docker system prune
+
+docker images
+
+docker tag dockerproject docker-user-name/project-name:0.0.1
+docker push docker-user-name/project-name:0.0.1
+
+docker login
+
+# running docker containers
+docker ps
+
+# all docker containers
+docker ps -a
+
+# docker containers numbers
+docker ps -aq
+
+# run docker container.
+# left port is local port, right port is docker port
+docker run -d -p 8001:8000 --name adam dockerproject
+
+# stop docker container
+docker stop container-name
+
+
+docker stats
