@@ -25,4 +25,5 @@ jobs:
     runs-on: macos-latest
     steps:
     - name: Step one
-      uses: docker://hello-world:latest
+      run: echo Hello!
+#      uses: docker://hello-world:latest
