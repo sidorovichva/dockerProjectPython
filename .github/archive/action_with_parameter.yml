@@ -1,0 +1,14 @@
+name: With Parameter
+
+on: [push]
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check the code
+      uses: actions/checkout@v2
+      with:
+        repository: apache/tomcat
+        ref: master
+        path: ./tomcat
