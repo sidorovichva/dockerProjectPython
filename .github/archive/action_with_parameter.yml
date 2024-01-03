@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check the code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4.1.1
       with:
         repository: apache/tomcat
         ref: master
