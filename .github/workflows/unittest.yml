@@ -1,0 +1,28 @@
+name: Python Tests
+
+on: [push]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4.1.1
+
+    - name: Set up Python
+      uses: actions/setup-python@v5.0.0
+      with:
+        python-version: 3.11
+
+    - name: Install Poetry
+      run: |
+        pip install poetry
+
+    - name: Install dependencies
+      run: |
+        poetry install
+
+    - name: Run tests
+      run: |
+        poetry run pytest /tests
