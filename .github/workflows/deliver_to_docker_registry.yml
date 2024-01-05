@@ -9,6 +9,6 @@ jobs:
 
     steps:
     - name: Build the Docker image
-      run: docker build -t ${{ secrets.DOCKER_ID }}/${{ variables.APP_NAME }}:latest .
+      run: docker build -t ${{ secrets.DOCKER_ID }}/${{ env.APP_NAME }}:latest .
     - name: Push the Docker image
-      run: docker push ${{ secrets.DOCKER_ID }}/${{ variables.APP_NAME }}:latest
+      run: docker push ${{ secrets.DOCKER_ID }}/${{ env.APP_NAME }}:latest
