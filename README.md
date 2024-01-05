@@ -1,1 +1,1 @@
-# Build Status Badge: ![Build Status](https://github.com/sidorovichva/dockerProjectPython/workflows/deliver_to_docker_registry/badge.svg)
+# Build Status Badge: ![Build Status](https://github.com/sidorovichva/dockerProjectPython/workflows/DeliverToDocker/badge.svg)
