@@ -1,0 +1,14 @@
+name: Deliver To Docker Registry
+
+on: [push]
+
+jobs:
+  deliver:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Build the Docker image
+      run: docker build -t ${{ secrets.DOCKER_ID }}/${{ variables.APP_NAME }}:latest .
+    - name: Push the Docker image
+      run: docker push ${{ secrets.DOCKER_ID }}/${{ variables.APP_NAME }}:latest
