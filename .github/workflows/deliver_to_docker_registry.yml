@@ -7,6 +7,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    env:
+      APP_NAME: python-docker-project
+
     steps:
     - name: Build the Docker image
       run: docker build -t ${{ secrets.DOCKER_ID }}/${{ env.APP_NAME }}:latest .
