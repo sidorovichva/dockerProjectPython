@@ -20,7 +20,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
         image: ${{ secrets.DOCKER_ID }}/${{ env.APP_NAME }}
-        tag: 0.0.3
+        tags: 0.0.3
         registry: docker.io
         username: ${{ secrets.DOCKER_ID }}
         password: ${{ secrets.DOCKER_PASS }}
